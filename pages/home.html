@@ -1,4 +1,14 @@
+<body>
   <div class="home">
     <h1>Explore o universo</h1>
-     <a id="section4" href="/universe" onclick="route()">QUERO SABER MAIS</a>
-    </div>
+    <a id="section4" href="/universe" onclick="route()">QUERO SABER MAIS</a>
+  </div>
+  <script type="module">
+    const section4 = document.getElementById("section4")
+
+    section4.addEventListener("click", () => {
+      document.documentElement.classList.remove("background")
+      document.documentElement.classList.add("background1")
+    })
+  </script>
+</body>

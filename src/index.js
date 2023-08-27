@@ -1,5 +1,5 @@
-import { Router } from "./router.js";
-import * as toggle from "./toggle-mode.js";
+import { Router } from "./router.js"
+import * as toggle from "./toggle-mode.js"
 
 export const router = new Router()
 router.add("/", "/pages/home.html")

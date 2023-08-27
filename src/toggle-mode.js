@@ -1,32 +1,40 @@
-export const background1 = document.getElementById("section1")
-export const background2 = document.getElementById("section2")
-export const background3 = document.getElementById("section3")
-export const background4 = document.getElementById("section4")
+export const home = document.getElementById("linkHome")
+export const universe = document.getElementById("linkUniverse")
+export const exploration = document.getElementById("linkExploration")
+export const background = document.querySelector("body")
 
-
-background1.addEventListener("click", () => {
-  document.documentElement.classList.remove("background1")
+home.addEventListener("click", () => {
+  background.classList.add("background")
+  background.classList.remove("background1")
+  background.classList.remove("background2")
+  /*document.documentElement.classList.remove("background1")
   document.documentElement.classList.remove("background2")
-  document.documentElement.classList.add("background")
-  background2.classList.remove("selected")
-  background3.classList.remove("selected")
-  background1.classList.add("selected")
+  document.documentElement.classList.add("background")*/
+  universe.classList.remove("selected")
+  exploration.classList.remove("selected")
+  home.classList.add("selected")
 })
 
-background2.addEventListener("click", () => {
-  document.documentElement.classList.remove("background")
+universe.addEventListener("click", () => {
+  background.classList.remove("background")
+  background.classList.add("background1")
+  background.classList.remove("background2")
+  /*document.documentElement.classList.remove("background")
   document.documentElement.classList.remove("background2")
-  document.documentElement.classList.add("background1")
-  background1.classList.remove("selected")
-  background3.classList.remove("selected")
-  background2.classList.add("selected")
+  document.documentElement.classList.add("background1")*/
+  home.classList.remove("selected")
+  exploration.classList.remove("selected")
+  universe.classList.add("selected")
 })
 
-background3.addEventListener("click", () => {
-  document.documentElement.classList.remove("background")
+exploration.addEventListener("click", () => {
+  background.classList.remove("background")
+  background.classList.remove("background1")
+  background.classList.add("background2")
+  /*document.documentElement.classList.remove("background")
   document.documentElement.classList.remove("background1")
-  document.documentElement.classList.add("background2")
-  background1.classList.remove("selected")
-  background3.classList.add("selected")
-  background2.classList.remove("selected")
+  document.documentElement.classList.add("background2")*/
+  home.classList.remove("selected")
+  exploration.classList.add("selected")
+  universe.classList.remove("selected")
 })
